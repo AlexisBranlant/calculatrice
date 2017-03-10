@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+			*,*:after,*:before{
+			  margin: 0;
+			  padding: 0;
+			  box-sizing: border-box;
+			}
+
+			body{
+			  font-size: 25px;
+			}
+			.calc {
+				width: 200px;
+				margin:0 auto;
+				font-size: 0;
+			}
+			
+			.calc-cell {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				font-size: 1.2rem;
+				font-weight: bold;
+				vertical-align: top;
+			}
+			
+			.calc-cell--x2 {
+				width: 100px;
+			}
+			.calc-cell--y2 {
+				height: 100px;
+				float: right;
+			}
+			
+			.calc-screen {
+				padding-right: 10px;
+				text-align: right;
+				font-size: 2rem;
+				font-weight: bold;
+				border:2px outset buttonface; 
+			}
+			
+			.calc-btn {
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: gray;
+				line-height: 25px;
+				cursor: pointer;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="calc">
+			<p class="calc-screen">0</p>
+			<div class="calc-cell calc-cell--x2">
+				<button class="calc-btn calc-reset">AC</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn calc-operator">/</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn calc-operator">X</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">7</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">8</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">9</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn calc-operator">-</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">4</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">5</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">6</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn calc-operator">+</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">1</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">2</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn">3</button>
+			</div>
+			<div class="calc-cell calc-cell--y2">
+				<button class="calc-btn calc-operator">=</button>
+			</div>
+			<div class="calc-cell calc-cell--x2">
+				<button class="calc-btn">0</button>
+			</div>
+			<div class="calc-cell">
+				<button class="calc-btn calc-operator">.</button>
+			</div>
+		</div>
+		
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
